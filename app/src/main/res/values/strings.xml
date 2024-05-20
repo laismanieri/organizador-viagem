@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">OrganizadorViagem</string>
+    <string name="app_name">organizador-viagem</string>
+    <string name="travel">Viagem</string>
+    <string name="info_destination">Informe o destino da viagem</string>
+    <string name="dates">Datas:</string>
+    <string name="departure_date">Data de ida</string>
+    <string name="return_date">Data de volta</string>
+    <string name="transportation">Transporte:</string>
+    <string name="plane">Avião</string>
+    <string name="car">Carro</string>
+    <string name="train">Trem</string>
+    <string name="baggage_to_check_in">Bagagem para despachar?</string>
+    <string name="checked_baggage">Sim</string>
+    <string name="travel_purpose">Proposito da viagem?</string>
+    <string name="destination">Destino:</string>
+    <string name="itinerary">Itinerário</string>
+    <string name="add_itinerary">Adicionar Itinerário</string>
+    <string name="activity">Atividade</string>
+    <string name="hour">Hora</string>
+    <string name="date">Data</string>
+    <string name="actitivity">Atividade</string>
+    <string-array name="travel_purposes_array">
+        <item>Selecione o propósito da viagem</item>
+        <item>Lazer</item>
+        <item>Negócios</item>
+        <item>Estudos</item>
+    </string-array>
 </resources>

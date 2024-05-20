@@ -1,19 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textViewTravel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/travel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/info_destination"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewDestination"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDestination" />
+
+        <TextView
+            android:id="@+id/textViewDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/destination"
+            app:layout_constraintStart_toStartOf="@+id/textViewTravel"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTravel" />
+
+        <TextView
+            android:id="@+id/textViewDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dates"
+            app:layout_constraintStart_toStartOf="@+id/editTextDestination"
+            app:layout_constraintTop_toBottomOf="@id/editTextDestination" />
+
+        <LinearLayout
+            android:id="@+id/linearDates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDates">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/departure_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/return_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTransportation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/transportation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearDates" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTransportation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTransportation" >
+
+            <RadioButton
+                android:id="@+id/radioButtonPlane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plane" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/train" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewLuggage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/baggage_to_check_in"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupTransportation"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupTransportation" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLuggage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checked_baggage"
+            app:layout_constraintStart_toStartOf="@+id/textViewLuggage"
+            app:layout_constraintTop_toBottomOf="@id/textViewLuggage" />
+
+        <TextView
+            android:id="@+id/textViewTravelPurpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/travel_purpose"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxLuggage"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxLuggage" />
+
+        <Spinner
+            android:id="@+id/spinnerTravelPurpose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewTravelPurpose"
+            app:layout_constraintTop_toBottomOf="@id/textViewTravelPurpose" />
+
+        <!-- Itinerary Section -->
+
+        <TextView
+            android:id="@+id/textViewItinerary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/itinerary"
+            app:layout_constraintStart_toStartOf="@+id/spinnerTravelPurpose"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTravelPurpose" />
+
+        <Button
+            android:id="@+id/buttonAddItinerary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_itinerary"
+            app:icon="@android:drawable/ic_menu_add"
+            app:layout_constraintStart_toStartOf="@+id/textViewItinerary"
+            app:layout_constraintTop_toBottomOf="@id/textViewItinerary" />
+
+        <ScrollView
+            android:id="@+id/scrollViewItineraries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAddItinerary">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutItineraries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
