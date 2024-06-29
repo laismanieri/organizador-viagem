@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textViewTravel"
+            android:id="@+id/textViewAccommodation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -29,7 +29,6 @@
             android:id="@+id/editTextDestination"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:hint="@string/info_destination"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,8 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/destination"
-            app:layout_constraintStart_toStartOf="@+id/textViewTravel"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTravel" />
+            app:layout_constraintStart_toStartOf="@+id/textViewAccommodation"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAccommodation" />
 
         <TextView
             android:id="@+id/textViewDates"
@@ -160,6 +159,8 @@
             app:layout_constraintStart_toStartOf="@+id/textViewLuggage"
             app:layout_constraintTop_toBottomOf="@id/textViewLuggage" />
 
+        <!-- Itinerary Section -->
+
         <TextView
             android:id="@+id/textViewTravelPurpose"
             android:layout_width="wrap_content"
@@ -169,17 +170,16 @@
             app:layout_constraintStart_toStartOf="@+id/checkBoxLuggage"
             app:layout_constraintTop_toBottomOf="@id/checkBoxLuggage" />
 
+
         <Spinner
             android:id="@+id/spinnerTravelPurpose"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textViewTravelPurpose"
             app:layout_constraintTop_toBottomOf="@id/textViewTravelPurpose" />
-
-        <!-- Itinerary Section -->
 
         <TextView
             android:id="@+id/textViewItinerary"
@@ -194,29 +194,21 @@
             android:id="@+id/buttonAddItinerary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_itinerary"
-            app:icon="@android:drawable/ic_menu_add"
+            android:layout_marginTop="4dp"
+            android:text="@string/addItinerary"
             app:layout_constraintStart_toStartOf="@+id/textViewItinerary"
-            app:layout_constraintTop_toBottomOf="@id/textViewItinerary" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewItinerary" />
 
-        <ScrollView
-            android:id="@+id/scrollViewItineraries"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:id="@+id/linearLayoutItineraries"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAddItinerary"
             android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonAddItinerary">
-
-            <LinearLayout
-                android:id="@+id/linearLayoutItineraries"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-
-        </ScrollView>
-
-
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

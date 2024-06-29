@@ -18,7 +18,13 @@
     <string name="activity">Atividade</string>
     <string name="hour">Hora</string>
     <string name="date">Data</string>
-    <string name="actitivity">Atividade</string>
+    <string name="addItinerary">Adicionar Itinerário</string>
+    <string name="remove">Remover</string>
+    <string name="accommodation">Hospedagem</string>
+    <string name="hotel">Hotel</string>
+    <string name="date_hour_checkin">Data/Hora de Check-in</string>
+    <string name="date_hour_checkout">Data/Hora de Check-out</string>
+    <string name="hotelAdress">Endereço</string>
     <string-array name="travel_purposes_array">
         <item>Selecione o propósito da viagem</item>
         <item>Lazer</item>

@@ -92,9 +92,12 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText editTextActivity = itineraryView.findViewById(R.id.editTextActivity);
         TextInputEditText editTextDate = itineraryView.findViewById(R.id.editTextDate);
         TextInputEditText editTextTime = itineraryView.findViewById(R.id.editTextTime);
+        Button buttonRemoveItinerary = itineraryView.findViewById(R.id.buttonRemoveItinerary);
 
         editTextDate.setOnClickListener(v -> showDatePickerDialog(editTextDate));
         editTextTime.setOnClickListener(v -> showTimePickerDialog(editTextTime));
+
+        buttonRemoveItinerary.setOnClickListener(v -> linearLayoutItineraries.removeView(itineraryView));
 
         linearLayoutItineraries.addView(itineraryView);
     }
