@@ -10,8 +10,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OrganizadorViagem"
+        android:theme="@style/Theme.OrganizadorDeViagem"
         tools:targetApi="31">
+        <activity
+            android:name=".AddAccommodationActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MainActivityFirts"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'br.edu.utfpr.organizadorviagem'
+    namespace 'br.edu.utfpr.organizadordeviagem'
     compileSdk 34
 
     defaultConfig {
-        applicationId "br.edu.utfpr.organizadorviagem"
-        minSdk 16
+        applicationId "br.edu.utfpr.organizadordeviagem"
+        minSdk 19
         targetSdk 34
         versionCode 1
         versionName "1.0"
