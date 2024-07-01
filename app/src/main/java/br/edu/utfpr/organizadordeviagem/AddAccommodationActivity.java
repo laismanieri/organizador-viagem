@@ -25,6 +25,8 @@ public class AddAccommodationActivity extends AppCompatActivity {
     private EditText addressEditText;
     private EditText checkInDateEditText;
     private EditText checkOutDateEditText;
+    private int position = -1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,17 @@ public class AddAccommodationActivity extends AppCompatActivity {
                 showDatePickerDialog(checkOutDateEditText);
             }
         });
+
+        Intent intent = getIntent();
+        if (intent != null) {
+            position = intent.getIntExtra("position", -1);
+            if (position != -1) {
+                nameEditText.setText(intent.getStringExtra("name"));
+                addressEditText.setText(intent.getStringExtra("address"));
+                checkInDateEditText.setText(intent.getStringExtra("checkInDate"));
+                checkOutDateEditText.setText(intent.getStringExtra("checkOutDate"));
+            }
+        }
 
         setTitle("Acomodações");
     }
@@ -93,9 +106,12 @@ public class AddAccommodationActivity extends AppCompatActivity {
         resultIntent.putExtra("address", address);
         resultIntent.putExtra("checkInDate", checkInDate);
         resultIntent.putExtra("checkOutDate", checkOutDate);
+        resultIntent.putExtra("position", position);
         setResult(RESULT_OK, resultIntent);
         finish();
     }
+
+
     private void clearFields() {
         nameEditText.setText("");
         addressEditText.setText("");
