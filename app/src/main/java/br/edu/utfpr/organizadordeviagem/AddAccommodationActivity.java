@@ -1,7 +1,10 @@
 package br.edu.utfpr.organizadordeviagem;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -21,6 +25,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Calendar;
 
 public class AddAccommodationActivity extends AppCompatActivity {
+
     private EditText nameEditText;
     private EditText addressEditText;
     private EditText checkInDateEditText;
@@ -65,6 +70,7 @@ public class AddAccommodationActivity extends AppCompatActivity {
 
         setTitle("Acomodações");
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

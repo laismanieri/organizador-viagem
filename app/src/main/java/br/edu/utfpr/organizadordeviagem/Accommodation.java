@@ -3,6 +3,7 @@ package br.edu.utfpr.organizadordeviagem;
 public class Accommodation {
 
     private String name;
+    private int type;
     private String address;
     private String checkInDate;
     private String checkOutDate;
@@ -22,6 +23,13 @@ public class Accommodation {
         this.name = name;
     }
 
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
     public String getAddress() {
         return address;
     }

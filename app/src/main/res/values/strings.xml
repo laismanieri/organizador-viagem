@@ -41,6 +41,7 @@
         <item>Outro</item>
     </string-array>
     <string name="name">Accommodations</string>
+    <string name="title_accomodations">Minhas Acomodações</string>
     <string-array name="names">
         <item>Hotel A</item>
         <item>Hotel B</item>

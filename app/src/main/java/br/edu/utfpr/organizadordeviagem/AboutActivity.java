@@ -1,7 +1,11 @@
 package br.edu.utfpr.organizadordeviagem;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +17,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class AboutActivity extends AppCompatActivity {
+
+    private static final String FILE = "br.edu.utfpr.organizadordeviagem.PREFERENCES_COLORS";
+    private static final String COLOR = "COLOR";
+    private LinearLayout layout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
