@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="addresses">
+        <item>Address A</item>
+        <item>Address B</item>
+        <item>Address C</item>
+        <item>Address D</item>
+    </string-array>
+    <string-array name="check_in_dates">
+        <item>01/01/2024</item>
+        <item>02/01/2024</item>
+        <item>03/01/2024</item>
+        <item>04/01/2024</item>
+    </string-array>
+    <string-array name="check_out_dates">
+        <item>05/01/2024</item>
+        <item>06/01/2024</item>
+        <item>07/01/2024</item>
+        <item>08/01/2024</item>
+    </string-array>
+    <string-array name="names">
+        <item>Hotel A</item>
+        <item>Hotel B</item>
+        <item>Hotel C</item>
+        <item>Hotel D</item>
+    </string-array>
+    <string-array name="transport_modes">
+        <item>Avião</item>
+        <item>Trem</item>
+        <item>Carro</item>
+        <item>ônibus</item>
+        <item>Navio</item>
+        <item>A pé</item>
+        <item>Bicicleta</item>
+        <item>Outro</item>
+    </string-array>
+    <string name="about">Sobre</string>
+    <string name="accommodation_adress">Endereço (hotel, Airbnb...)</string>
+    <string name="accommodation_name">Nome (hotel, Airbnb...)</string>
+    <string name="add">Adicionar</string>
+    <string name="add_item">Adicionar Item</string>
+    <string name="app_description">Este aplicativo organiza e gerencia acomodações de viagem.</string>
+    <string name="app_name">Organizador De Viagem</string>
+    <string name="bike">Bicicleta</string>
+    <string name="bus">Ônibus</string>
+    <string name="button_clear">Limpar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="car">Carro</string>
+    <string name="clear">Limpar</string>
+    <string name="clicked_on">Clicou em: </string>
+    <string name="context_menu_delete">Excluir</string>
+    <string name="context_menu_update">Atualizar</string>
+    <string name="course">Curso Pós em Java</string>
+    <string name="date">Data ida</string>
+    <string name="date_check_ing">Data check-ing</string>
+    <string name="date_check_out">Data check-out</string>
+    <string name="date_return">Data volta</string>
+    <string name="delete">Excluir</string>
+    <string name="destination">Inserir destino</string>
+    <string name="dialog_choose_theme_title">Escolha um Modo de Tema</string>
+    <string name="dialog_theme_dark">Modo Noturno</string>
+    <string name="dialog_theme_light">Modo Normal</string>
+    <string name="dialog_title_date_picker">Selecione a Data</string>
+    <string name="email">laismanieri@alunos.utfpr.edu.br</string>
+    <string name="fields_cleared">Campos limpos</string>
+    <string name="fields_empty_warning">Preencha todos os campos</string>
+    <string name="menu_about">Sobre</string>
+    <string name="menu_add">Adicionar</string>
+    <string name="menu_clear">Limpar</string>
+    <string name="menu_save">Salvar</string>
+    <string name="menu_sort_az">Ordenar A-Z</string>
+    <string name="menu_sort_za">Ordenar Z-A</string>
+    <string name="menu_theme">Modo de Tema</string>
+    <string name="name">Acomodações</string>
+    <string name="name_item">Nome do Item</string>
+    <string name="on_foot">A pé</string>
+    <string name="one_way">Só ida</string>
+    <string name="origin">Inserir origem</string>
+    <string name="other">Outro</string>
+    <string name="plane">Avião</string>
+    <string name="round_trip">Ida e volta</string>
+    <string name="save">Salvar</string>
+    <string name="save_button">Salvar</string>
+    <string name="ship">Navio</string>
+    <string name="sort_order_preference">SORT_ORDER</string>
+    <string name="student_name">Lais Manieri Coimbra</string>
+    <string name="text_travel">Viagem</string>
+    <string name="theme_mode">Modo de Tema</string>
+    <string name="title_about_activity">Sobre</string>
+    <string name="title_accommodation_layout">Minha Acomodação</string>
+    <string name="title_accommodations">Minhas Acomodações</string>
+    <string name="title_add_accommodation">Acomodações</string>
+    <string name="title_expense_layout">Despesa</string>
+    <string name="title_itinerary_layout">Itinerário</string>
+    <string name="title_list_layout">Lista</string>
+    <string name="title_main_activity">Organizador de Viagem</string>
+    <string name="title_transport_layout">Transporte</string>
+    <string name="train">Train</string>
+    <string name="travel_title">Viagem</string>
+    <string name="university">Universidade Tecnológica Federal do Paraná - UTFPR</string>
+    <string name="update">Alterar</string>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/title_transport_layout"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroupTravelOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonOneWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorTextInput"
+                android:text="@string/one_way" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRoundTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorTextInput"
+                android:text="@string/round_trip" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input"
+        android:orientation="vertical"
+        >
+
+        <Spinner
+            android:id="@+id/spinnerTransport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorTextInput"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_localization" />
+
+        <EditText
+            android:id="@+id/editTextOriginTransport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/origin"
+            android:textColorHint="@color/colorTextInput" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_localization" />
+
+        <EditText
+            android:id="@+id/editTextDestinationTransport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/destination"
+            android:textColorHint="@color/colorTextInput" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutReturnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_input"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_calendar" />
+
+        <EditText
+            android:id="@+id/editTextOneWay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/date"
+            android:textColorHint="@color/colorTextInput" />
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="18dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_calendar" />
+
+        <EditText
+            android:id="@+id/editTextReturn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/date_return"
+            android:textColorHint="@color/colorTextInput" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="@string/save_button"
+            android:onClick="saveTransportDetails"/>
+
+        <Button
+            android:id="@+id/buttonClearFieldsTransport"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="@string/button_clear"
+            android:onClick="clearFieldsTransport" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "br.edu.utfpr.organizadordeviagem.app-mergeDebugResources-29:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Lais\\.gradle\\caches\\transforms-4\\6affa4e05b0205be640f97d82e6f109c\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}
