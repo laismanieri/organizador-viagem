@@ -33,14 +33,14 @@ public class AboutActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        setTitle("Sobre");
+        setTitle(getString(R.string.title_about_activity));
 
-        // Definindo os valores dos TextViews
-        ((TextView) findViewById(R.id.studentNameTextView)).setText("Lais Manieri Coimbra");
-        ((TextView) findViewById(R.id.courseTextView)).setText("Curso Pós em Java");
-        ((TextView) findViewById(R.id.emailTextView)).setText("laismanieri@alunos.utfpr.edu.br ");
-        ((TextView) findViewById(R.id.descriptionTextView)).setText("Este aplicativo organiza e gerencia acomodações de viagem.");
-        ((TextView) findViewById(R.id.universityTextView)).setText("Universidade Tecnológica Federal do Paraná - UTFPR");
+        // Definindo os valores dos TextViews com as strings do strings.xml
+        ((TextView) findViewById(R.id.studentNameTextView)).setText(getString(R.string.student_name));
+        ((TextView) findViewById(R.id.courseTextView)).setText(getString(R.string.course));
+        ((TextView) findViewById(R.id.emailTextView)).setText(getString(R.string.email));
+        ((TextView) findViewById(R.id.descriptionTextView)).setText(getString(R.string.app_description));
+        ((TextView) findViewById(R.id.universityTextView)).setText(getString(R.string.university));
     }
 
     @Override

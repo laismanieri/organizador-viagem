@@ -68,7 +68,7 @@ public class AddAccommodationActivity extends AppCompatActivity {
             }
         }
 
-        setTitle("Acomodações");
+        setTitle(getString(R.string.title_add_accommodation));
     }
 
 
@@ -103,7 +103,7 @@ public class AddAccommodationActivity extends AppCompatActivity {
         String checkOutDate = checkOutDateEditText.getText().toString();
 
         if (name.isEmpty() || address.isEmpty() || checkInDate.isEmpty() || checkOutDate.isEmpty()) {
-            Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.fields_empty_warning), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -123,7 +123,7 @@ public class AddAccommodationActivity extends AppCompatActivity {
         addressEditText.setText("");
         checkInDateEditText.setText("");
         checkOutDateEditText.setText("");
-        Toast.makeText(this, "Campos limpos", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.fields_cleared), Toast.LENGTH_SHORT).show();
     }
 
     @Override

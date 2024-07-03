@@ -1,47 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OrganizadorDeViagem</string>
-    <string name="text_travel">Viagem</string>
-    <string name="travel_title">Viagem</string>
-    <string name="title_accommodation_layout">Minha Acomodação</string>
-    <string name="title_expense_layout">Despesa</string>
-    <string name="title_itinerary_layout">Itinerário</string>
-    <string name="title_list_layout">Lista</string>
-    <string name="accommodation_adress">Endereço (hotel, Airbnb...)</string>
-    <string name="accommodation_name">Nome (hotel, Airbnb...)</string>
-    <string name="date_check_out">Data check-out</string>
-    <string name="date_check_ing">Data check-ing</string>
-    <string name="save_button">Salvar</string>
-    <string name="cancel_button">Cancelar</string>
-    <string name="title_transport_layout">Transporte</string>
-    <string name="plane">Avião</string>
+    <string name="app_name">Trip Organizer</string>
+    <string name="text_travel">Travel</string>
+    <string name="travel_title">Travel</string>
+    <string name="title_accommodation_layout">My Accommodation</string>
+    <string name="title_expense_layout">Expense</string>
+    <string name="title_itinerary_layout">Itinerary</string>
+    <string name="title_list_layout">List</string>
+    <string name="accommodation_adress">Address (hotel, Airbnb...)</string>
+    <string name="accommodation_name">Name (hotel, Airbnb...)</string>
+    <string name="date_check_out">Check-out Date</string>
+    <string name="date_check_ing">Check-in Date</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="title_transport_layout">Transport</string>
+    <string name="plane">Plane</string>
     <string name="train">Train</string>
-    <string name="car">Carro</string>
-    <string name="bus">Ônibus</string>
-    <string name="ship">Navio</string>
-    <string name="on_foot">A pé</string>
-    <string name="bike">Bicicleta</string>
-    <string name="other">Outro</string>
-    <string name="date">Data ida</string>
-    <string name="destination">Inserir destino</string>
-    <string name="origin">Inserir origem</string>
-    <string name="round_trip">Ida e volta</string>
-    <string name="one_way">Só ida</string>
-    <string name="date_return">Data volta</string>
-    <string name="add_item">Adicionar Item</string>
-    <string name="name_item">Nome do Item</string>
-    <string name="button_clear">Limpar</string>
+    <string name="car">Car</string>
+    <string name="bus">Bus</string>
+    <string name="ship">Ship</string>
+    <string name="on_foot">On Foot</string>
+    <string name="bike">Bike</string>
+    <string name="other">Other</string>
+    <string name="date">Departure Date</string>
+    <string name="destination">Enter Destination</string>
+    <string name="origin">Enter Origin</string>
+    <string name="round_trip">Round Trip</string>
+    <string name="one_way">One Way</string>
+    <string name="date_return">Return Date</string>
+    <string name="add_item">Add Item</string>
+    <string name="name_item">Item Name</string>
+    <string name="button_clear">Clear</string>
     <string-array name="transport_modes">
-        <item>Avião</item>
-        <item>Trem</item>
-        <item>Carro</item>
-        <item>ônibus</item>
-        <item>Navio</item>
-        <item>A pé</item>
-        <item>Bicicleta</item>
-        <item>Outro</item>
+        <item>Plane</item>
+        <item>Train</item>
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Ship</item>
+        <item>On Foot</item>
+        <item>Bike</item>
+        <item>Other</item>
     </string-array>
     <string name="name">Accommodations</string>
-    <string name="title_accomodations">Minhas Acomodações</string>
+    <string name="title_accommodations">My Accommodations</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="theme_mode">Theme Mode</string>
+    <string name="title_main_activity">Trip Organizer</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_about">About</string>
+    <string name="menu_sort_az">Sort A-Z</string>
+    <string name="menu_sort_za">Sort Z-A</string>
+    <string name="menu_theme">Theme Mode</string>
+    <string name="dialog_choose_theme_title">Choose a Theme Mode</string>
+    <string name="dialog_theme_light">Light Mode</string>
+    <string name="dialog_theme_dark">Dark Mode</string>
+    <string name="sort_order_preference">SORT_ORDER</string>
+    <string name="context_menu_update">Update</string>
+    <string name="context_menu_delete">Delete</string>
+    <string name="student_name">Lais Manieri Coimbra</string>
+    <string name="course">Postgraduate Course in Java</string>
+    <string name="email">laismanieri@students.utfpr.edu.br</string>
+    <string name="app_description">This app organizes and manages travel accommodations.</string>
+    <string name="university">Federal Technological University of Paraná - UTFPR</string>
+    <string name="title_add_accommodation">Accommodations</string>
+    <string name="title_about_activity">About</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_clear">Clear</string>
+    <string name="fields_empty_warning">Please fill in all fields</string>
+    <string name="fields_cleared">Fields cleared</string>
+    <string name="clicked_on">Clicked on: </string>
+    <string name="dialog_title_date_picker">Select Date</string>
     <string-array name="names">
         <item>Hotel A</item>
         <item>Hotel B</item>

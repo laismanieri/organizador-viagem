@@ -39,7 +39,7 @@
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:background="@null"
-                android:text="@string/title_accomodations"
+                android:text="@string/title_accommodations"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>

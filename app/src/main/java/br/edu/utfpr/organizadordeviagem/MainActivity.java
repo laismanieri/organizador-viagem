@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Accommodation selectedAccommodation = accommodations.get(position);
-                Toast.makeText(MainActivity.this, "Clicou em: " + selectedAccommodation.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, getString(R.string.clicked_on) + selectedAccommodation.getName(), Toast.LENGTH_SHORT).show();
             }
         });
-        setTitle("Organizador de Viagem");
+        setTitle(getString(R.string.title_main_activity));
         registerForContextMenu(listView);
         readOrderPreference();
     }
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void showThemeSelectionDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Escolha um Modo de Tema")
-                .setItems(new CharSequence[]{"Modo Normal", "Modo Noturno"}, new DialogInterface.OnClickListener() {
+        builder.setTitle(getString(R.string.dialog_choose_theme_title))
+                .setItems(new CharSequence[]{getString(R.string.dialog_theme_light), getString(R.string.dialog_theme_dark)}, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         switch (which) {
