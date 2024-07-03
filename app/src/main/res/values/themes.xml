@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OrganizadorDeViagem" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.OrganizadorDeViagem" parent="Base.Theme.OrganizadorDeViagem" />
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">#253a4a</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="CustomSpinnerDropdownStyle" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:background">#253a4a</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
